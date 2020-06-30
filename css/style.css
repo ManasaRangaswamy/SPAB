@@ -1,0 +1,170 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-variant: tabular-nums;
+}
+
+.bg-top{
+    background-color: #022d5d;
+    color:#fff;
+}
+
+.bg-top .navbar-brand{
+    color:white
+}
+.navbar{
+    box-shadow:-7px 10px 8px 0 rgba(0, 0, 0, 0.45);
+    background-color: #fff !important;
+}
+
+.navbar-toggler{
+    color:#000 !important
+}
+
+#navbarNav li{
+    font-weight: bold;
+    padding:5px;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link{
+    
+    color:#000 !important;
+}
+
+
+
+.carousel-inner img {
+    width: 100%;
+    height:550px;
+  }
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    color: #fff;
+}
+
+.aboutus h1
+{
+    color:#022d5d;
+}
+
+.aboutus p
+{
+    text-align: center;
+    font-weight: 600;
+}
+.aboutus .card{
+    min-height: 310px;
+}
+
+.aboutus h5,
+.aboutus h1,
+.howitworks h1,
+.cpackages h1,
+.gallery h1{
+    color:#bf3d1a;
+}
+
+.aboutus i{
+    padding-left: 75px;
+}
+
+.card p,
+.card h5,
+.aboutus i{
+    color: #fff !important;
+
+}
+
+#bpkg:hover,
+#bpkg1:hover,
+#bpkg2:hover,
+#bpkg3:hover
+{
+    cursor: pointer !important;
+}
+
+/* .aboutus i:hover{
+    transition: all .4s ease-in-out;
+    transform: rotate(1turn) scale(1.2)
+} */
+
+
+
+
+.section-divider{
+    width: 50px;
+    height: 3px;
+    background: #022d5d;;
+    margin: 0 auto 20px;
+}
+
+.card{
+    padding:8px;
+    min-height: 100px;
+    /* background: linear-gradient(rgba(14, 15, 15, 0.5), rgb(2, 2, 2)), url("../images/td.jpg");background-size: 100% 100%;color: black !important; */
+}
+
+
+
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.howitworks{
+    background: url('../images/howitworks-bg.png');
+    height:450px;
+}
+
+.howitworks-divider{
+    width: 50px;
+    height: 3px;
+    background: #022d5d;
+}
+
+.cpackages .col-md-4{
+    display: inline-block;
+    margin-left:-4px;
+  }
+
+
+
+.cpackages .card:hover{
+    box-shadow: 12px 12px 16px 0 rgba(0,0,0,0.2);
+}
+
+  .cpackages .carousel-indicators li{
+    background-color:red;
+  }
+  .cpackages .carousel-control-prev-icon,
+  .cpackages .carousel-control-next-icon{
+    background-color:red;
+  }
+ 
+.howitworks .rounded{
+    border:5px solid #bf3d1a;
+    border-radius: 50% !important;
+    padding:30px;
+
+}
+
+.gallery img{
+    height:300px !important;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px){
+    .bg-top{
+        display: none;
+    }
+}
+
