@@ -6,8 +6,9 @@ body{
 }
 
 .bg-top{
-    background-color: #022d5d;
+    /* background-color: #022d5d; */
     color:#fff;
+    background-color:#000;
 }
 
 .bg-top .navbar-brand{
@@ -50,6 +51,11 @@ body{
     color: #fff;
 }
 
+.top-navbar{
+    position: relative;
+    z-index: 1050;
+}
+
 .aboutus h1
 {
     color:#022d5d;
@@ -67,7 +73,6 @@ body{
 .aboutus h5,
 .aboutus h1,
 .howitworks h1,
-.cpackages h1,
 .gallery h1{
     color:#bf3d1a;
 }
@@ -120,7 +125,7 @@ body{
 }
 
 .howitworks{
-    background: url('../images/howitworks-bg.png');
+    background: url('../images/bg1-hiw.jpg');
     height:450px;
 }
 
@@ -128,6 +133,19 @@ body{
     width: 50px;
     height: 3px;
     background: #022d5d;
+}
+
+.cpackage-divider{
+    width: 50px;
+    height: 3px;
+    background: #bf3d1a;
+    margin: 0 auto 20px;
+}
+
+.cpackages{
+    height:430px;
+    background-color: black;
+    color:white !important;
 }
 
 .cpackages .col-md-4{
@@ -141,13 +159,7 @@ body{
     box-shadow: 12px 12px 16px 0 rgba(0,0,0,0.2);
 }
 
-  .cpackages .carousel-indicators li{
-    background-color:red;
-  }
-  .cpackages .carousel-control-prev-icon,
-  .cpackages .carousel-control-next-icon{
-    background-color:red;
-  }
+
  
 .howitworks .rounded{
     border:5px solid #bf3d1a;
@@ -159,6 +171,15 @@ body{
 .gallery img{
     height:300px !important;
     width: 100%;
+}
+
+footer h3,
+footer p{
+    color:White
+}
+
+.interior .card{
+    min-height: auto !important;
 }
 
 
