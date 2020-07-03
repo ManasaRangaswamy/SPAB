@@ -110,7 +110,7 @@
             <a class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link" href="./aboutus.html">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Services</a>
@@ -130,6 +130,10 @@
         </ul>
       </div>
     </nav>
+    <!-- marquee -->
+    <marquee width="80%" direction="left" height="30px" scrollamount="4" class="m-2">
+      This is a sample scrolling text that has scrolls in the upper direction.
+      </marquee>
 
     <!-- carousel -->
 
@@ -406,37 +410,132 @@
         </div>
       </div>
 
-      <!-- footer -->
-      <footer class="section footer-classic context-dark bg-image mt-5" style="background: #2d3246;">
+      <!-- contact Us-->
+
+      <div class="contactus mt-4 pt-3">
+        <h1 class="text-center pt-4">Contact Us</h1>
+        <p class="section-divider"></p>
         <div class="container">
-          <div class="row pt-5">
-<div class="col-md-4">
-  <h3 >About Us</h3>
-  <p>  SPAB is a one stop answer for all your home development needs,
-    giving the most far reaching turnkey arrangements. Coming up next is
-    a snappy manual for buildAhome, and all the highlights referenced
-    underneath are remembered for our extraordinary 1350/ - per Sqft
-    estimating</p>
-  
-</div>
-<div class="col-md-4">
-  <h3>Address</h3>
-  <p>Golden Houses</p>
-  <p>  #302, Ashish Apartment,</p>
-    <p>2nd Floor, Inner Circle Road</p>
-    <p>Whitefield, Bengaluru -560066</p>
-</div>
-<div class="col-md-4">
-  <h3>Contact Us</h3>
-  <ul >
-    <a href="https://www.facebook.com/" class="fab fa-facebook fa-2x" target="_blank"></a>
-    <a href="https://www.linkedin.com/" class="fab fa-linkedin fa-2x" target="_blank"></a>
-    <a href="https://www.twitter.com/" class="fab fa-twitter fa-2x" target="_blank"></a>
-    <a href="https://www.youtube.com/" class="fab fa-youtube fa-2x" target="_blank"></a>
-</ul>
-</div>
+          <div class="row mt-4 pt-4 text-center">
+            <div class="col-md-4">
+              <div class="contact-address">
+                <i class="fa fa-map-marker fa-4x text-center" aria-hidden="true"></i>
+              <h6><b >Address</b></h6>
+              <p>Golden Houses
+               #302, Ashish Apartment,
+                2nd Floor, Inner Circle Road
+                Whitefield, Bengaluru -560066</p>
+              </div>
+            </div>
+            <div class="col-md-4 line">
+              <div class="contact-phone">
+                <i class="fas fa-phone fa-4x" aria-hidden="true"></i>
+              <h6><b>Phone No</b></h6>
+              <p>+ 91 9663-494-949</p>
+              <p> + 91 9663-494-949</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+              <h6><b>Email</b></h6>
+              <p>+ 91 9663-494-949</p>
+              <p> + 91 9663-494-949</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <form action="mail_from_modal.php" method="post" id="contactform" role="form" class="contactForm" style="width:97%;">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="Phone" class="form-control" name="phone" id="phone" placeholder="Your Phone number" data-msg="Please enter a valid phone number">
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="requirement" rows="5" data-rule="required" data-msg="Your requirement" placeholder="Your requirement"></textarea>
+                <div class="validation"></div>
+              </div>
+             
+              <div class="text-center"><button class="btn btn-primary" type="submit">Send Message</button></div>
+            </form>
           </div>
         </div>
+      </div>
+
+      <!-- footer -->
+    
+
+
+      <footer id="footer" style="margin-top:30px">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row pt-5">
+    
+              <div class="col-lg-3 col-md-6 footer-info">
+                  <a href="#intro"><img src="./images//logo.png" alt="" style="height:100px; width:220px;"></a>
+    
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links" style="color: white !important;">
+                <h4>Useful Links</h4>
+                <ul class="pt-3">
+                  <li style="list-style-type: none;margin-left:-40px"><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="#" style="color: white !important;">Home</a></li>
+                  <li  style="list-style-type: none;margin-left:-40px""><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="#" style="color: white !important;">About us</a></li>
+                  <li  style="list-style-type: none;margin-left:-40px""><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="#" style="color: white !important;">Careers</a></li>
+                  
+                  
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h4>Contact Us</h4>
+                <p class="pt-3">
+                  Golden Houses<br> 
+                  #302, Ashish Apartment,<br> 
+                  2nd Floor, Inner Circle Road<br>
+                  Whitefield, Bengaluru -560066<br>
+                  <strong>Phone:</strong> + 91 9663-494-949,<br>+ 91 9663-494-949<br>
+                  <strong>Email:</strong>info@sunshinepromotersandbuilders.com<br>
+                </p>
+    
+        
+              </div>
+    
+              <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
+                <h4>Our Newsletter</h4>
+                <p style="padding: 10px;"><a href="https://www.thebetterindia.com/169900/sustainable-green-cheap-home-construction-mangaluru/">Better india</a>  
+                </p>
+                
+                <p style="padding: 10px;"><a href="https://www.business-standard.com/article/beyond-business/house-that-nature-built-from-collecting-rainwater-to-recycling-used-water-119020200755_1.html">Business standard</a>  
+                </p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+              </div> -->
+    
+            </div>
+          </div>
+        </div>
+    
+       <div class="footer-top" style="background: #111; color: white; height:50px ">
+        <div class="container" >
+          <div class="copyright text-center pt-2">
+            © Copyright <strong>sunshinepromotersandbuilders</strong>.powered by JPR Inc.
+          </div>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=buildAhome
+            -->
+          </div>
+        </div>
+       </div>
       </footer>
 
       

@@ -73,7 +73,9 @@ body{
 .aboutus h5,
 .aboutus h1,
 .howitworks h1,
-.gallery h1{
+.gallery h1,
+.contactus h1,
+.contactus h6{
     color:#bf3d1a;
 }
 
@@ -168,12 +170,29 @@ body{
 
 }
 
+.contactus{
+    background-color: #f7f7f7;
+    height:600px;
+}
+
+.contactus i{
+    padding:10px 120px;
+    color: #022d5d;
+}
+.contactus h6{
+    padding:15px 110px;
+    text-transform: capitalize;
+}
+
+
 .gallery img{
     height:300px !important;
     width: 100%;
 }
-
-footer h3,
+footer{
+    background-color: black;
+}
+footer h4,
 footer p{
     color:White
 }
@@ -182,10 +201,30 @@ footer p{
     min-height: auto !important;
 }
 
+.about{
+    /* background: url("../images/eas.jpg");
+    background-size: cover;
+    height:400px; */
+
+    background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)) 0 0/cover,url('../images/eas.jpg') center center/cover fixed; height:580px
+
+}
+
+.plots{
+    background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)) 0 0/cover,url('../images/plots.jpeg') center center/cover fixed; height:580px
+}
 
 @media only screen and (max-width: 768px){
     .bg-top{
         display: none;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .contactus .line{
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
     }
 }
 
