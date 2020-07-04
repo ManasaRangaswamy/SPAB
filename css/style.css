@@ -63,6 +63,15 @@ body{
 .dropdown button:hover{
     background-color: #bf3d1a;
 }
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #ccc;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
 .aboutus h1
 {
     color:#022d5d;
@@ -240,8 +249,55 @@ footer p{
 }
 
 @media only screen and (max-width: 768px){
-    .bg-top{
-        display: none;
+    .bg-top .email{
+        padding:0px 140px;
+        margin-top: -20px;
+    }
+
+    .bg-top .dropdown{
+        padding: 0px 10px;
+    margin-bottom: 10px;
+    }
+
+    #demo h1{
+        font-size: 30px;
+        color:#000;
+        /* padding-left: 30px; */
+    }
+
+    .aboutus .col-md-3{
+        padding:15px !important;
+    }
+    .aboutus .col-md-3 i{
+        padding-left:100px !important;
+    }
+
+    .cpackages{
+        height: auto !important;
+        padding-bottom: 10px;
+    }
+
+    .cpackages .col-sm-3{
+        padding-top: 10px;
+    }
+
+    .howitworks {
+        height: auto !important;
+        background: #f7f7f7 !important;
+        margin:15px 0px;
+    }
+
+    .howitworks .col-sm-2{
+        padding: 15px 30px;
+    }
+
+    .gallery .col-md-4{
+        padding-top: 15px;
+    }
+
+    .contactus,
+    .footer-bottom {
+        height:auto;
     }
 }
 
@@ -251,5 +307,9 @@ footer p{
         border-left: 1px solid #ddd;
         border-right: 1px solid #ddd;
     }
+
+    /* .bg-top .email{
+       display: none;
+    } */
 }
 
