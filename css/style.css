@@ -56,9 +56,25 @@ body{
     z-index: 1050;
 }
 
+.dropdown button{
+    background-color: #bf3d1a;
+}
+
+.dropdown button:hover{
+    background-color: #bf3d1a;
+}
 .aboutus h1
 {
     color:#022d5d;
+}
+
+.howitworks .rounded i{
+    color:#bf3d1a
+}
+
+.howitworks .rounded p{
+    color:#022d5d;
+    font-weight: bold;
 }
 
 .aboutus p
@@ -207,6 +223,15 @@ footer p{
     height:400px; */
 
     background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)) 0 0/cover,url('../images/eas.jpg') center center/cover fixed; height:580px
+
+}
+
+.forms{
+    /* background: url("../images/eas.jpg");
+    background-size: cover;
+    height:400px; */
+
+    background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)) 0 0/cover,url('../images/and.jpg') center center/cover fixed; height:720px
 
 }
 
