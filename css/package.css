@@ -1,5 +1,5 @@
 .packages{
-   background:  0 0/cover #f8f9f9
+   background:  0 0/cover #a8adad52;
 }
 
 .packages button{
@@ -20,7 +20,12 @@
 .packages .designanddrawing,
 .packages .structure,
 .packages .Kitchen,
-.packages .Bathroom{
+.packages .Bathroom,
+.packages .Doorsandwindow,
+.packages .Painting,
+.packages .Flooring,
+.packages .Electrical,
+.packages .Miscellaneous{
     font-size: 14px;
     padding: 10px;
     line-height: 0.3;
