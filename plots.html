@@ -109,29 +109,29 @@
         class="collapse navbar-collapse justify-content-center"
         id="navbarNav"
       >
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./aboutus.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Process</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Designs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Contact</a>
-          </li>
-        </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./aboutus.html">About Us</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="">Services</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#hiw">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#designs">Designs</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="">Team</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href=#cnt>Contact Us</a>
+        </li>
+      </ul>
       </div>
     </nav>
  <!-- marquee -->
@@ -237,33 +237,29 @@
         <h1 class="text-center mt-2 pt-5" style="color: #bf3d1a;">Enquiry Form</h1>
         <p class="section-divider"></p>
         <div class="row">
-          <form action="mail_from_modal.php" method="post" id="contactform" role="form" class="contactForm" style="width:97%;">
+          <form  class="contactForm" style="width:97%;">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validation"></div>
+                <input type="text" name="name" class="form-control" id="name">
+                <p id="name-msg"></p>
               </div>
               <div class="form-group col-md-6">
-                <input type="Phone" class="form-control" name="phone" id="phone" placeholder="Enter Your Phone number" data-msg="Please enter a valid phone number">
-                <div class="validation"></div>
+                <input type="Phone" class="form-control" name="phone" id="phone" >
+                <p id="phone-msg"></p>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="phone" id="phone" placeholder="Enter your email" data-msg="Please enter a valid phone number">
-                <div class="validation"></div>
+                <input type="email" class="form-control" name="phone" id="email" >
+                <p id="mail-msg"></p>
               </div>
-              <!-- <div class="form-group col-md-6">
-                <textarea class="form-control" name="requirement" rows="5" data-rule="required" data-msg="Your requirement" placeholder="Your requirement"></textarea>
-                <div class="validation"></div>
-              </div> -->
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="nter your Message" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validation"></div>
+                <input type="text" name="name" class="form-control" id="req" >
+                <p id="req-msg"></p>
               </div>
             </div>
            
-            <div class="text-center"><button class="btn btn-primary" type="submit">Send Message</button></div>
+            <div class="text-center"><button class="btn btn-primary" type="submit" id="cntbtn">Send Message</button></div>
           </form>
         </div>
 
@@ -277,15 +273,16 @@
     
               <div class="col-lg-4 col-md-6 footer-info">
                   <a href="#intro"><img src="./images//logo.png" alt="" style="height:100px; width:220px;"></a>
-    
+                  <p>SunShine Promoters And Builders</p>
               </div>
     
               <div class="col-lg-4 col-md-6 footer-links" style="color: white !important;">
                 <h4>Useful Links</h4>
                 <ul class="pt-3">
-                  <li style="list-style-type: none;margin-left:-40px"><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="#" style="color: white !important;">Home</a></li>
-                  <li  style="list-style-type: none;margin-left:-40px""><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="#" style="color: white !important;">About us</a></li>
-                  <li  style="list-style-type: none;margin-left:-40px""><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="#" style="color: white !important;">Careers</a></li>
+                  <li style="list-style-type: none;margin-left:-40px"><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="./index.html" style="color: white !important;">Home</a></li>
+                  <li  style="list-style-type: none;margin-left:-40px""><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="./aboutus.html" style="color: white !important;">About us</a></li>
+                  <li  style="list-style-type: none;margin-left:-40px""><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="./interior.html" style="color: white !important;">Interiors</a></li>
+                  <li  style="list-style-type: none;margin-left:-40px""><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="./plots.html" style="color: white !important;">Plots</a></li>
                   
                   
                 </ul>
@@ -294,7 +291,7 @@
               <div class="col-lg-4 col-md-6 footer-contact">
                 <h4>Contact Us</h4>
                 <p class="pt-3">
-                  Golden Houses<br> 
+                  SunShine Promoters And Builders<br> 
                   #302, Ashish Apartment,<br> 
                   2nd Floor, Inner Circle Road<br>
                   Whitefield, Bengaluru -560066<br>
@@ -325,7 +322,7 @@
         <div class="container" >
           <div class="copyright text-center pt-2">
             © Copyright <strong>sunshinepromotersandbuilders</strong>.powered by JPR Inc.
-            <a href="#" class="back-to-top " style="display: inline; "><i class="fas fa-facebook-square" aria-hidden="true"></i></a>
+             <!-- <a href="#" class="back-to-top " style="display: inline; "><i class="fas fa-facebook-square" aria-hidden="true"></i></a> -->
             <a href="#" class="back-to-top float-right" style="display: inline; color: white; background: #bf3d1a;
             padding: 7px 12px;
             border: blanchedalmond;
@@ -350,13 +347,12 @@
 
   
 
-    
-
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -367,6 +363,80 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#name").on("input", function() {
+          $("#name-msg").html("");
+        });
+        $("#phone").on("input", function() {
+          $("#phone-msg").html("");
+        });
+        $("#mail").on("input", function() {
+          $("#mail-msg").html("");
+        });
+        $("#req").on("input", function() {
+          $("#req-msg").html("");
+        });
+        $("#cntbtn").on("click", function() {
+          event.preventDefault();
+          var isValid = true;
+          var name = $("#name").val();
+
+          if (name == "") {
+            $("#name-msg").html("");
+            $("#name-msg").append("Name is required");
+            isValid = false;
+          }
+          var phone = $("#phone").val();
+          if (phone == "") {
+            $("#phone-msg").html("");
+            $("#phone-msg").append("Phone is required");
+            isValid = false;
+          }
+          // var req = $("#phone").val();
+          // if (req == "") {
+          //   $("#req-msg").html("");
+          //   $("#req-msg").append("Last name is required");
+          //   isValid = false;
+          // }
+          var mail = $("#phone").val();
+          if (mail == "") {
+            $("#mail-msg").html("");
+            $("#mail-msg").append("Email is required");
+            isValid = false;
+          }
+         
+
+          $("#cntbtn").prop("disabled", true);
+          
+          // $("button").prop("disabled", false);
+
+          if(!isValid) {
+            return;
+          } else {
+            $.ajax({
+              type: "POST",
+              url: "http://localhost:8090/auth/signup",
+              data: {
+                Name: name,
+                Phone: phone,
+                Message: req,
+                Emial:mail
+              },
+              success: function(data) {
+                console.log(data);
+               
+                
+              },
+              error: function(err) {
+                console.log(err);
+              }
+            });
+          }
+        });
+      });
+    </script>
     
   </body>
 </html>

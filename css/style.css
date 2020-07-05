@@ -204,7 +204,7 @@ body{
 
 .contactus{
     background-color: #f7f7f7;
-    height:640px;
+    height:650px;
 }
 
 .contactus i{
@@ -285,6 +285,12 @@ footer p{
     background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)) 0 0/cover,url('../images/plots.jpeg') center center/cover fixed;
 }
 
+
+#name-msg,
+#phone-msg ,
+#mail-msg{
+  color: red;
+}
 @media only screen and (max-width: 768px){
     .bg-top .email{
         padding:0px 140px;
