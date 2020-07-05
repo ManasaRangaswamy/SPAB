@@ -42,13 +42,16 @@ body{
     height:550px;
   }
 
+
+
 .centered{
     position: absolute;
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
     opacity: 0.8;
-    color: #fff;
+    color: #000;
+    background: #fff;
 }
 
 .top-navbar{
@@ -224,6 +227,32 @@ footer p{
 
 .interior .card{
     min-height: auto !important;
+    padding: 10px;
+    margin: 35px;
+    background-color: #bf3d1ab0;
+}
+
+.interior .card i{
+    font-size: 22px;
+    color: #bf3d1ab0;
+}
+
+.interior .card-header{
+    border: none;
+    background-color: #f9f9f9;
+    
+}
+
+.interior .card-header a{
+    border: none;
+   color: #bf3d1ab0;
+   font-weight: bold;
+   padding: 2px 0px 2px 5px;
+    
+}
+.interior .card-body{
+    border: none;
+    background-color: #fff;
 }
 
 .about{
@@ -244,8 +273,12 @@ footer p{
 
 }
 
-.plots{
+/* .plots{
     background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)) 0 0/cover,url('../images/plots.jpeg') center center/cover fixed; height:580px
+} */
+
+.interior{
+    background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)) 0 0/cover,url('../images/plots.jpeg') center center/cover fixed;
 }
 
 @media only screen and (max-width: 768px){
