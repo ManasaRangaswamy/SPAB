@@ -9,6 +9,7 @@ body{
     /* background-color: #022d5d; */
     color:#fff;
     background-color:#000;
+    height:120px;
 }
 
 .bg-top .navbar-brand{
@@ -185,12 +186,18 @@ body{
     display: inline-block;
     margin-left:-4px;
   }
-
+  /* .cpackages .card-body{
+    background: #000;
+} */
 
 
 .cpackages .card:hover{
     box-shadow: 12px 12px 16px 0 rgba(0,0,0,0.2);
     cursor: pointer;
+}
+
+marquee:hover{
+    cursor: context-menu;
 }
 
 
@@ -234,6 +241,11 @@ footer p{
     padding: 10px;
     margin: 35px;
     background-color: #bf3d1ab0;
+}
+
+.interior .card:hover{
+    cursor: pointer;
+    color:#bf3d1ab0
 }
 
 .interior .card i{
@@ -288,7 +300,9 @@ footer p{
 
 #name-msg,
 #phone-msg ,
-#mail-msg{
+#mail-msg,
+#area-msg,
+#floor-msg{
   color: red;
 }
 @media only screen and (max-width: 768px){

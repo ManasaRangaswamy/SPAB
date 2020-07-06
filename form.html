@@ -34,12 +34,13 @@
             <a class="navbar-brand" href="index.html"
               >
               <!-- <span class="flaticon-bee mr-1"></span>SPAB -->
-              <img src="./images/logo.png" height="45px">
-              <p></p>
+              <img src="./images/logo.png" height="60px">
+              <p style="text-align: center;font-size:16px">SPAB</p>
+              <!-- <p>Every ones Dream</p> -->
               </a>
           </div>
           <div class="col-lg-8 d-block top-navbar">
-            <div class="row d-flex">
+            <div class="row d-flex mt-4">
               <div
                 class="col-md-3 d-flex topper align-items-center align-items-stretch py-md-4"
               >
@@ -48,12 +49,12 @@
                 >
                   <span class="icon-paper-plane"></span>
                 </div>
-                <div class="text d-flex align-items-center pt-2">
+                <div class="text d-flex align-items-center pt-2 email">
                   <span style="margin-left:-150px">info@sunshinepromotersandbuilders.com</span>
                 </div>
               </div>
               <div
-                class="col-md-4 d-flex topper align-items-center align-items-stretch py-md-4"
+                class="col-md-6 d-flex topper align-items-center align-items-stretch py-md-4"
               >
                 <div
                   class="icon d-flex justify-content-center align-items-center"
@@ -62,7 +63,7 @@
                 </div>
                 <div class="text d-flex align-items-center pt-2">
                   <!-- <i class="fa fa-phone-square" aria-hidden="true"></i> -->
-                  <span> + 91 9663-494-949</span>
+                  <span> + 91 9741921182/+ 91 9663-494-949 </span>
                 </div>
               </div>
               <!-- <div
@@ -116,20 +117,20 @@
           <li class="nav-item">
             <a class="nav-link" href="./aboutus.html">About Us</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="">Services</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#hiw">How It Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Process</a>
+            <a class="nav-link" href="#designs">Designs</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Designs</a>
-          </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="">Team</a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="">Contact</a>
+            <a class="nav-link" href=#cnt>Contact Us</a>
           </li>
         </ul>
       </div>
@@ -137,7 +138,7 @@
  <!-- marquee -->
  <marquee width="80%" direction="left" height="30px" scrollamount="4" class="m-2" style="color:#bf3d1a">
   <!-- our group are working.Please raise your solicitations/Requests @+ 91 9663-494-949/info@sunshinepromotersandbuilders.com -->
-  One prevent answer for home development from 1550* per Sqf
+ One prevent answer for home development from 1550* per Sqf.If any queries call us @+ 91 9663-494-949 / + 91 9741921182
 </marquee>
    
 
@@ -155,24 +156,34 @@
                     padding: 10px 50px;">
                         <form>
                             <h5>Personal Details:</h5>
-                            <label for="fname">Name:</label><br>
-                            <input type="text" id="fname" name="fname" class="w-100"><br>
-                            <label for="lname">Phone:</label><br>
-                            <input type="text" id="lname" name="lname" class="w-100"><br>
-                            <label for="lname">Email:</label><br>
-                            <input type="text" id="lname" name="lname" class="w-100"><br>
-                            <label for="lname">City:</label><br>
-                            <input type="text" id="lname" name="lname" class="w-100"><br>
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" class="w-100"><br>
+                            <p id="name-msg"></p>
+                            <label for="phone">Phone:</label><br>
+                            <input type="text" id="phone" name="phone" class="w-100"><br>
+                            <p id="phone-msg"></p>
+                            <label for="mail">Email:</label><br>
+                            <input type="email" id="mail" name="mail" class="w-100"><br>
+                            <p id="mail-msg"></p>
+                            <label for="city">City:</label><br>
+                            <!-- <input type="text" id="lname" name="lname" class="w-100"><br> -->
+                            <select name="cars" id="city" name="city" class="w-50">
+                              <option value="Bangalore">Bangalore</option>
+                              
+                            </select>
                             <h5 class="pt-3">Request Details:</h5>
 
-                            <label for="fname">Land Area:</label><br>
-                            <input type="text" id="fname" name="fname" class="w-100"><br>
-                            <label for="lname">Floors:</label><br>
-                            <input type="text" id="lname" name="lname" class="w-100"><br>
-                            <label for="lname">Budget Estimate:</label><br>
-                            <input type="text" id="lname" name="lname" class="w-100"><br>
+                            <label for="area">Land Area:</label><br>
+                            <input type="text" id="area" name="area" class="w-100"><br>
+                            <p id="area-msg"></p>
+                            <label for="floor">Floors:</label><br>
+                            <input type="text" id="floor" name="floor" class="w-100"><br>
+                            <p id="floor-msg"></p>
+                            <label for="budget">Budget Estimate:</label><br>
+                            <input type="text" id="budget" name="budget" class="w-100"><br>
+                            
 
-                            <button class="btn btn-primary mt-3 w-50 ml-5">Submit</button>
+                            <button class="btn btn-primary mt-3 w-50 ml-5" id="cntbtn">Submit</button>
                           </form>
                         </div>
                 </div>
@@ -269,9 +280,9 @@
 
     
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
     <script
@@ -284,6 +295,104 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#name").on("input", function() {
+          $("#name-msg").html("");
+        });
+        $("#phone").on("input", function() {
+          $("#phone-msg").html("");
+        });
+        $("#mail").on("input", function() {
+          $("#mail-msg").html("");
+        });
+        $("#city").on("input", function() {
+          $("#city-msg").html("");
+        });
+        $("#area").on("input", function() {
+          $("#area-msg").html("");
+        });
+        $("#floor").on("input", function() {
+          $("#floor-msg").html("");
+        });
+        $("#budget").on("input", function() {
+          $("#budget-msg").html("");
+        });
+        $("#cntbtn").on("click", function() {
+          event.preventDefault();
+          var isValid = true;
+          var name = $("#name").val();
+
+          if (name == "") {
+            $("#name-msg").html("");
+            $("#name-msg").append("Name is required");
+            isValid = false;
+          }
+          var phone = $("#phone").val();
+          if (phone == "") {
+            $("#phone-msg").html("");
+            $("#phone-msg").append("Phone is required");
+            isValid = false;
+          }
+         
+          var mail = $("#phone").val();
+          if (mail == "") {
+            $("#mail-msg").html("");
+            $("#mail-msg").append("Email is required");
+            isValid = false;
+          }
+
+          var city = $("#city").val();
+          console.log(city)
+         
+         var area = $("#area").val();
+         if(area == ""){
+          $("#area-msg").html("");
+            $("#area-msg").append("Please fill this field");
+            isValid = false;
+         }
+
+         var floor = $("#floor").val();
+         if(floor == ""){
+          $("#floor-msg").html("");
+            $("#floor-msg").append("Please fill this field");
+            isValid = false;
+         }
+         
+
+          $("#cntbtn").prop("disabled", true);
+          
+          // $("button").prop("disabled", false);
+
+          if(!isValid) {
+            return;
+          } else {
+            $.ajax({
+              type: "POST",
+              url: "http://localhost:8090/auth/signup",
+              data: {
+                Name: name,
+                Phone: phone,
+                Emial:mail,
+                City:city,
+                Area:area,
+                Floor:floor,
+                Budget:budget,
+                PageName:Package
+              },
+              success: function(data) {
+                console.log(data);
+                
+              },
+              error: function(err) {
+                console.log(err);
+              }
+            });
+          }
+        });
+      });
+    </script>
     
   </body>
 </html>
