@@ -186,9 +186,9 @@ body{
     display: inline-block;
     margin-left:-4px;
   }
-  /* .cpackages .card-body{
+  .cpackages .card-body{
     background: #000;
-} */
+}
 
 
 .cpackages .card:hover{
@@ -235,6 +235,8 @@ footer h4,
 footer p{
     color:White
 }
+
+
 
 .interior .card{
     min-height: auto !important;
