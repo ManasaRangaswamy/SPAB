@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" /> 
     <link rel="stylesheet" href="css/howitworks.css" />
+    <script src="./env.js" ></script>
     <title>GoldenSunshine</title>
   </head>
   <body>
@@ -104,8 +105,9 @@
     </div>
     <!-- Navbar section -->
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-      <a class="navbar-brand" href="#">Spac</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top navmob">
+      <a class="navbar-brand" href="./index.html" >Golden Sunshines</a>
+      <span class="navbar-tagline"> "Everyones Dream"</span>
       <button
         class="navbar-toggler"
         type="button"
@@ -140,6 +142,18 @@
           <li class="nav-item">
             <a class="nav-link" href=#cnt>Contact Us</a>
           </li>
+
+          <div class="dropdown mobview">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Request Demo
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#cpkg">Construction</a>
+              <a class="dropdown-item" href="./plots.html">Plots</a>
+              <a class="dropdown-item" href="./interior.html">Interior Design</a>
+            </div>
+          </div>
+          
         </ul>
       </div>
     </nav>
@@ -584,11 +598,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"
   ></script>
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script> -->
+    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -632,7 +642,9 @@
             $("#phone-msg").append("Phone is required");
             isValid = false;
           }
-          var Contact = 
+          var req = $("#req").val();
+          console.log(name,phone)
+          
          
 
           $("#cntbtn").prop("disabled", true);
@@ -641,14 +653,15 @@
             return;
           } else {
             $.ajax({
-              type: "POST",
-              url: "http://localhost:8090/auth/signup",
-              data: {
+              method: "POST",
+              url: server_url + "/contact",
+              contentType: 'application/json; charset=utf-8',
+              data: JSON.stringify({
                 Name: name,
                 Phone: phone,
                 Message: req,
-                PageName:"Home"
-              },
+                PageName: "Home"
+              }),
               success: function(data) {
                 console.log(data);
               },

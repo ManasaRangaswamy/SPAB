@@ -22,6 +22,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./env.js"></script>
     <title>GoldenSunshine</title>
   </head>
   <body>
@@ -378,8 +379,9 @@
             isValid = false;
          }
          
+         var budget = $("#budget").val()
 
-          $("#cntbtn").prop("disabled", true);
+          // $("#cntbtn").prop("disabled", true);
           
           // $("button").prop("disabled", false);
 
@@ -387,18 +389,19 @@
             return;
           } else {
             $.ajax({
-              type: "POST",
-              url: "http://localhost:8090/auth/signup",
-              data: {
+              method: "POST",
+              url:  server_url + "/contact",
+              contentType: 'application/json; charset=utf-8',
+              data: JSON.stringify({
                 Name: name,
                 Phone: phone,
-                Emial:mail,
+                Email:mail,
                 City:city,
                 Area:area,
                 Floor:floor,
                 Budget:budget,
                 PageName:"Package"
-              },
+              }),
               success: function(data) {
                 console.log(data);
                 

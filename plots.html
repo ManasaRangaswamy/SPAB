@@ -22,6 +22,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./env.js"></script>
     <title>GoldenSunshine</title>
   </head>
   <body>
@@ -263,7 +264,7 @@
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="phone" id="email" placeholder="Enter Email" >
+                <input type="email" class="form-control" name="mail" id="mail" placeholder="Enter Email" >
                 <p id="mail-msg"></p>
               </div>
               <div class="form-group col-md-6">
@@ -413,13 +414,9 @@
             $("#phone-msg").append("Phone is required");
             isValid = false;
           }
-          // var req = $("#phone").val();
-          // if (req == "") {
-          //   $("#req-msg").html("");
-          //   $("#req-msg").append("Last name is required");
-          //   isValid = false;
-          // }
-          var mail = $("#phone").val();
+          var req = $("#req").val();
+          
+          var mail = $("#mail").val();
           if (mail == "") {
             $("#mail-msg").html("");
             $("#mail-msg").append("Email is required");
@@ -436,14 +433,15 @@
           } else {
             $.ajax({
               type: "POST",
-              url: "http://localhost:8090/auth/signup",
-              data: {
+              url:  server_url + "/contact",
+              contentType: 'application/json; charset=utf-8',
+              data: JSON.stringify({
                 Name: name,
                 Phone: phone,
                 Message: req,
                 Email:mail,
                 PageName:"Plots"
-              },
+              }),
               success: function(data) {
                 console.log(data);
                

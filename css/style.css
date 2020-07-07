@@ -326,7 +326,7 @@ footer p{
   color: red;
 }
 @media only screen and (max-width: 768px){
-    .bg-top .email{
+    /* .bg-top .email{
         padding:0px 140px;
         margin-top: -20px;
     }
@@ -334,7 +334,46 @@ footer p{
     .bg-top .dropdown{
         padding: 0px 10px;
     margin-bottom: 10px;
+    } */
+
+    .bg-top{
+        display: none;
     }
+
+    .mobview{
+        display: block;
+    }
+
+    .navbar {
+        height: auto
+    }
+
+    .navbar-dark .navbar-brand{
+        
+        font-size: 24px;
+    color: #efb71e !important;
+    font-weight: bold;
+ 
+
+    }
+    .navbar-tagline {
+        font-size:14px;
+        font-style: italic;
+        position: relative; 
+     top: -16px !important; 
+     left:30px
+        /* padding: 0px; */
+        /* margin: -10px 30px 20px; */
+        /* margin: -30px 0px 6px 50px; */
+    }
+
+    .navmob .navbar-toggler{
+        position: relative;
+        right:8px;
+        top:-35px
+    }
+
+    
 
     #demo h1{
         font-size: 30px;
@@ -386,6 +425,13 @@ footer p{
         border-right: 1px solid #ddd;
     }
 
+    .mobview{
+        display: none;
+    }
+
+    .navmob span{
+        display: none;
+    }
     /* .bg-top .email{
        display: none;
     } */
