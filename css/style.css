@@ -9,7 +9,7 @@ body{
     /* background-color: #022d5d; */
     color:#fff;
     background-color:#000;
-    height:150px;
+    height:150px !important;
 }
 
 .bg-top .navbar-brand{
@@ -314,7 +314,7 @@ footer p{
 }
 
 .howitworks{
-   background: linear-gradient(rgba(255, 255, 255, 0.19),rgba(255,255,255,.9)) 0 0/cover,url(../images/gut.jpg) center center/cover;
+   background: linear-gradient(rgba(255, 255, 255, 0.19),rgba(255,255,255,.9)) 0 0/cover,url('../images/gut.jpg') center center/cover;
 }
 
 
