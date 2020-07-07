@@ -9,11 +9,25 @@ body{
     /* background-color: #022d5d; */
     color:#fff;
     background-color:#000;
-    height:120px;
+    height:150px;
 }
 
 .bg-top .navbar-brand{
     color:white
+}
+
+.bg-top .navbar-brand p:hover ~ span,
+.bg-top .navbar-brand img:hover ~ span{
+    color:white !important
+}
+
+.bg-top .navbar-brand span:hover{
+    color:white !important
+}
+
+.bg-top .navbar-brand span::after{
+    content:" " !important;
+    color:white !important
 }
 .navbar{
     box-shadow:-7px 10px 8px 0 rgba(0, 0, 0, 0.45);
@@ -186,9 +200,9 @@ body{
     display: inline-block;
     margin-left:-4px;
   }
-  .cpackages .card-body{
+  /* .cpackages .card-body{
     background: #000;
-}
+} */
 
 
 .cpackages .card:hover{
@@ -211,7 +225,7 @@ marquee:hover{
 
 .contactus{
     background-color: #f7f7f7;
-    height:650px;
+    height:680px;
 }
 
 .contactus i{
@@ -297,6 +311,10 @@ footer p{
 
 .interior{
     background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)) 0 0/cover,url('../images/plots.jpeg') center center/cover fixed;
+}
+
+.howitworks{
+   background: linear-gradient(rgba(255, 255, 255, 0.19),rgba(255,255,255,.9)) 0 0/cover,url(../images/gut.jpg) center center/cover;
 }
 
 
